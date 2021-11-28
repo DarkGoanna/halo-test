@@ -1,0 +1,44 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 48px;
+  width: 100%;
+  max-width: 288px;
+}
+
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  row-gap: 16px;
+}
+
+.form > button {
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+.form > button::after {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 20px;
+  background: url('../Button/icons/arrow-right.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+  margin-left: 8px;
+}
+
+.form > button:hover::after {
+  width: 20px;
+  opacity: 1;
+  visibility: visible;
+  transition: .3s;
+}

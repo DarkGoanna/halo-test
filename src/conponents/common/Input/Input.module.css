@@ -1,0 +1,94 @@
+.inputWrapper {
+  position: relative;
+}
+
+.inputWrapper.notValid::before,
+.inputWrapper.notValid::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+
+.inputWrapper.notValid::after {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  overflow: hidden;
+  right: 11px;
+  z-index: 2;
+}
+
+.inputWrapper.notValid::before {
+  width: 20px;
+  height: 20px;
+  right: calc(11px + 2px);
+  z-index: 3;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.massage {
+  margin-top: 2px;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.02em;
+  opacity: 0;
+  height: 0;
+  visibility: hidden;
+  transition: .3s;
+}
+
+.container.notValid .massage {
+  color: var(--error);
+  opacity: 1;
+  visibility: visible;
+  transition: .3s;
+  height: max-content;
+}
+
+.container.notValid .inputWrapper.notValid::before {
+  background-image: url('./icons/error.svg');
+}
+
+.container.notValid .inputWrapper.notValid::after {
+  background-color: var(--error);
+}
+
+.container.valid .input {
+  border-color: #4BCFA0;
+}
+
+.container.notValid .input {
+  border-color: var(--error);
+}
+
+.input {
+  padding: 15px;
+  padding-right: 46px;
+  width: 100%;
+  height: 56px;
+  border: 1px solid rgba(0, 0, 0, .2);
+  border-radius: 16px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  color: var(--text-v1);
+  outline: none;
+  transition: .1s
+}
+
+.input:active,
+.input:focus {
+  border-color: rgba(0, 0, 0, .5);
+  transition: .1s;
+}
+
+input::placeholder {
+  font-size: inherit;
+  line-height: inherit;
+  color: var(--text-v1);
+  opacity: .5;
+}

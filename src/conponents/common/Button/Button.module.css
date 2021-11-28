@@ -1,0 +1,18 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  border-radius: 16px;
+  border: 1px solid var(--bg-v1);
+  min-height: 56px;
+  letter-spacing: -0.02em;
+  cursor: pointer;
+  transition: .3s;
+  background: var(--bg-v1);
+  color: var(--text-v2);
+}
+
+.button:hover {
+  transform: .3s;
+}
