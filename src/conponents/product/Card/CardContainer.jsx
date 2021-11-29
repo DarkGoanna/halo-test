@@ -1,4 +1,3 @@
-import React from 'react'
 import {connect} from 'react-redux'
 import {showModalAC, setContentAC} from '../../../store/redusers/modal-reduser'
 import Card from './Card'

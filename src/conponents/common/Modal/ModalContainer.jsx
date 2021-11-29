@@ -1,4 +1,3 @@
-import React from 'react'
 import {connect} from 'react-redux'
 import {hideModalAC} from '../../../store/redusers/modal-reduser'
 import {clearFormAC} from '../../../store/redusers/form-reduser'

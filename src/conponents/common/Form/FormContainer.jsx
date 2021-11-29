@@ -1,4 +1,3 @@
-import React from 'react'
 import Form from './Form'
 import {connect} from 'react-redux'
 import {checkFormAC, clearFormAC} from '../../../store/redusers/form-reduser'

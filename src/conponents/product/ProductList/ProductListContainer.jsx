@@ -1,4 +1,3 @@
-import React from 'react'
 import {connect} from 'react-redux'
 import {setCardsAC, getCheapestAC} from '../../../store/redusers/cards-reduser'
 import ProductList from './ProductList'

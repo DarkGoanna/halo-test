@@ -1,4 +1,3 @@
-import React from 'react'
 import Input from './Input'
 import {connect} from 'react-redux'
 import {setValueAC, checkValueAC, checkFormAC} from '../../../store/redusers/form-reduser'
